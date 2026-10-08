@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bulkdomainsearch-cli"
+version = "1.0.0"
+authors = [
+  { name="BulkDomainSearch.si Research Desk", email="ads@bulkdomainsearch.si" },
+]
+description = "High-speed CLI tool for scanning Slovenian (.si) and Super Intelligence domain availability via official RDAP RFC 7480 protocols."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: Name Service (DNS)",
+]
+keywords = [
+    "si-domain",
+    "super-intelligence",
+    "bulk-domain-search",
+    "domain-checker",
+    "rdap",
+    "whois",
+    "arnes",
+    "register-si",
+]
+
+[project.urls]
+"Homepage" = "https://bulkdomainsearch.si"
+"Web App" = "https://bulkdomainsearch.si"
+"Bug Tracker" = "https://github.com/MishrSurya/BulkDomainSearch/issues"
+
+[project.scripts]
+bulkdomainsearch = "bulk_si_cli:main"
+bulk-si = "bulk_si_cli:main"
