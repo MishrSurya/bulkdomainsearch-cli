@@ -8,17 +8,27 @@ version = "1.0.0"
 authors = [
   { name="BulkDomainSearch.si Research Desk", email="ads@bulkdomainsearch.si" },
 ]
-description = "High-speed CLI tool for scanning Slovenian (.si) and Super Intelligence domain availability via official RDAP RFC 7480 protocols."
+description = "High-performance RFC 7480 RDAP client & asynchronous CLI for scanning Slovenian (.si) and Super Intelligence ccTLD domains at scale. Zero rate limits, stream export."
 readme = "README.md"
 requires-python = ">=3.8"
+license = { text = "MIT" }
 classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Internet :: Name Service (DNS)",
+    "Topic :: Utilities",
 ]
 keywords = [
-    "si-domain",
+    "si-domains",
     "super-intelligence",
     "bulk-domain-search",
     "domain-checker",
@@ -26,13 +36,16 @@ keywords = [
     "whois",
     "arnes",
     "register-si",
+    "rfc-7480",
+    "domain-investing",
 ]
 
 [project.urls]
 "Homepage" = "https://bulkdomainsearch.si"
 "Web App" = "https://bulkdomainsearch.si"
-"Bug Tracker" = "https://github.com/MishrSurya/BulkDomainSearch/issues"
+"Bug Tracker" = "https://github.com/MishrSurya/bulkdomainsearch-cli/issues"
+"Documentation" = "https://bulkdomainsearch.si/llms.txt"
 
 [project.scripts]
-bulkdomainsearch = "bulk_si_cli:main"
-bulk-si = "bulk_si_cli:main"
+bulkdomainsearch = "bulkdomainsearch.cli:main"
+bulk-si = "bulkdomainsearch.cli:main"
